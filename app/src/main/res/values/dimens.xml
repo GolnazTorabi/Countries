@@ -15,4 +15,8 @@
     <dimen name="margin_28">28dp</dimen>
     <dimen name="margin_32">32dp</dimen>
     <dimen name="margin_36">36dp</dimen>
+
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+    <dimen name="radius_16">16dp</dimen>
 </resources>

@@ -66,7 +66,9 @@ dependencies {
 
     //Hilt
     implementation(Hilt.hilt)
+    implementation(Hilt.hiltViewModel)
     kapt(Hilt.hiltKapt)
+    kapt(Hilt.hiltCompilerKapt)
 
     //Retrofit
     implementation(Retrofit.retrofit)
