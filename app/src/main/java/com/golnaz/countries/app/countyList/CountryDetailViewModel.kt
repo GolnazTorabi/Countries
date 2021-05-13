@@ -1,6 +1,6 @@
 package com.golnaz.countries.app.countyList
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 
 class CountryDetailViewModel : ViewModel() {
     // TODO: Implement the ViewModel

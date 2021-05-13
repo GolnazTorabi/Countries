@@ -1,6 +1,6 @@
 package com.golnaz.countries.utils.networkDi
 
-import android.viewbinding.BuildConfig
+import com.golnaz.countries.BuildConfig
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides

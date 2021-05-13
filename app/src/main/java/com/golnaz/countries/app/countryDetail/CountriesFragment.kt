@@ -1,11 +1,10 @@
 package com.golnaz.countries.app.countryDetail
 
-import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.golnaz.countries.R
 
 class CountriesFragment : Fragment() {
@@ -23,13 +22,5 @@ class CountriesFragment : Fragment() {
         return inflater.inflate(R.layout.countries_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(
-            this,
-            ViewModelProvider.NewInstanceFactory()
-        ).get(CountriesViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
