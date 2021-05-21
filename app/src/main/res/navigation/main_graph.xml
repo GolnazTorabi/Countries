@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/countriesFragment"
-        android:name="com.golnaz.countries.app.countryDetail.CountriesFragment"
+        android:name="com.golnaz.countries.app.countyList.CountriesFragment"
         android:label="countries_fragment"
         tools:layout="@layout/countries_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/countryDetailFragment"
-        android:name="com.golnaz.countries.app.countyList.CountryDetailFragment"
+        android:name="com.golnaz.countries.app.countryDetail.CountryDetailFragment"
         android:label="country_detail_fragment"
         tools:layout="@layout/country_detail_fragment" />
 </navigation>

@@ -1,6 +1,7 @@
 package com.golnaz.countries.utils.networkDi
 
 import com.golnaz.countries.BuildConfig
+import com.golnaz.countries.data.api.CountriesApi
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides
@@ -15,6 +16,10 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 @Module
 class NetworkModule {
+    @Provides
+    @Singleton
+    fun provideCountriesApi(retrofit: Retrofit): CountriesApi =
+        retrofit.create(CountriesApi::class.java)
 
     @Provides
     @Singleton

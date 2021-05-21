@@ -1,4 +1,4 @@
-package com.golnaz.countries.app.countryDetail
+package com.golnaz.countries.app.countyList
 
 import android.os.Bundle
 import android.view.LayoutInflater

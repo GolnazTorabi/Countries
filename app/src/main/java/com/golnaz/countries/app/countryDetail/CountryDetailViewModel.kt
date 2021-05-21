@@ -1,4 +1,4 @@
-package com.golnaz.countries.app.countyList
+package com.golnaz.countries.app.countryDetail
 
 import androidx.lifecycle.ViewModel
 
