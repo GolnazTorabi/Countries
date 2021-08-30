@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.golnaz.countries.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CountryDetailFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = CountryDetailFragment()
-    }
+
 
     private lateinit var viewModel: CountryDetailViewModel
 

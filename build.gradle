@@ -7,6 +7,9 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven {
+            url  "https://nexus.karafsapp.com/repository/maven-group-all"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.0"
@@ -22,6 +25,11 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        maven {
+            url  "https://nexus.karafsapp.com/repository/maven-group-all"
+
+        }
     }
 }
 

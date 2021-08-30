@@ -1,17 +1,18 @@
 package com.golnaz.countries.domain.model
 
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "Country")
+@Entity(
+    tableName = "Country"
+)
 data class CountryModel(
-    @PrimaryKey(autoGenerate = false)
+    @PrimaryKey
+    val name: String,
+    val alpha3Code: String,
     val alphaCode: String,
-    val name: String? = null,
     val capital: String? = null,
-    val language: String? = null,
-    val region: String? = null,
-    val currency: String? = null,
-    val ImageUrl: String? = null,
+    val imageUrl: String? = null,
 )

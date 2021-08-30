@@ -2,8 +2,10 @@ package com.golnaz.countries.data.local.response
 
 import android.os.Parcelable
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 import kotlinx.android.parcel.Parcelize
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class ResponseCountries(
 
@@ -11,6 +13,7 @@ data class ResponseCountries(
 	val responseCountries: List<ResponseCountriesItem?>? = null
 ) : Parcelable
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class RegionalBlocsItem(
 
@@ -27,6 +30,7 @@ data class RegionalBlocsItem(
 	val otherAcronyms: List<String?>? = null
 ) : Parcelable
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class LanguagesItem(
 
@@ -43,6 +47,7 @@ data class LanguagesItem(
 	val iso6391: String? = null
 ) : Parcelable
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class CurrenciesItem(
 
@@ -56,6 +61,7 @@ data class CurrenciesItem(
 	val name: String? = null
 ) : Parcelable
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class ResponseCountriesItem(
 
@@ -132,6 +138,7 @@ data class ResponseCountriesItem(
 	val currencies: List<CurrenciesItem?>? = null
 ) : Parcelable
 
+@JsonClass(generateAdapter = true)
 @Parcelize
 data class Translations(
 

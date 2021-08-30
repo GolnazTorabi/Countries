@@ -28,7 +28,7 @@ class NetworkModule {
         converterFactory: MoshiConverterFactory
     ): Retrofit =
         Retrofit.Builder()
-            .baseUrl("https://restcountries.eu/rest")
+            .baseUrl("https://restcountries.eu/rest/")
             .addConverterFactory(converterFactory)
             .client(httpClient.build())
             .addCallAdapterFactory(CoroutinesResponseCallAdapterFactory())

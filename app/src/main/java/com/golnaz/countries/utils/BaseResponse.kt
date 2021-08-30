@@ -13,6 +13,6 @@ sealed class BaseResponse<out T> {
     ) : BaseResponse<Nothing>()
 
     val isLoading get() = this is Loading
-    val isFail get() = this is Fail
+    val isFail get() = (this as? Fail)?.error
     val valueOrNull get() = (this as? Success)?.value
 }
